@@ -1,0 +1,30 @@
+{
+  "name": "middle and off",
+  "version": "0.0.0",
+  "authors": [
+    "Eriks Vitolins <evitolins@gmail.com>"
+  ],
+  "description": "website for Richard Chapman",
+  "main": "index.html",
+  "keywords": [
+    "website",
+    "architecture",
+    "photography",
+    "portfolio"
+  ],
+  "license": "MIT",
+  "homepage": "middleandoff.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "fontawesome": "~4.3.0",
+    "modernizr": "2.8.3"
+  }
+}

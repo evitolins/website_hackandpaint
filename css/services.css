@@ -1,0 +1,142 @@
+.image_main {
+    position: relative;
+    height: 460px;
+    background-color: #fee;
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main_summary {
+    padding: 60px;
+}
+
+.main_summary p {
+    margin-bottom: 1.5em;
+}
+
+.main_summary_image {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.address_title {
+    font-size: 1.5em;
+}
+
+.title {
+    position: absolute;
+    top: 75px;
+    right: 50px;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-weight: 100;
+    width: 350px;
+}
+.title .main {
+    font-size: 3.1em;
+    letter-spacing: 0.06em;
+}
+.title .sub {
+    font-size: 1.8em;
+    letter-spacing: 0.06em;
+}
+
+.description {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.keywords {
+    color: #b1dfe9;
+    font-family: 'Sumana', serif;
+    padding: 0px 20px;
+    font-size: 1.3em;
+}
+
+
+.subheading {
+    text-align: center;
+    color: #b1dfe9;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    margin: -10px 0 40px;
+}
+
+table.table_service {
+    border-top: 1px solid #dbe7f1;
+    margin: auto;
+    width: 100%;
+    /*width: calc(100% - 4em);*/
+}
+
+table.table_service tr {
+    border-bottom: 1px solid #dbe7f1;
+}
+
+table.table_service td {
+    padding: 13px 8px;
+}
+
+table.table_service td:first-child {
+    font-size: 1.2em;
+}
+
+table.table_service td:last-child {
+    text-align: right;
+    font-size: 1.2em;
+}
+
+table.table_service .detail {
+    font-size: 0.8em;
+}
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .image_main {
+        height: 230px;
+    }
+    .title {
+        font-size: 0.8em;
+        width: 350px;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .image_main {
+        height: 230px;
+    }
+    .title {
+        right: 30px;
+        font-size: 0.8em;
+        width: 250px;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .image_main {
+        height: 230px;
+    }
+    .title {
+        top: 85px;
+        right: 20px;
+        font-size: 0.6em;
+        width: 150px;
+    }
+}
