@@ -61,7 +61,7 @@ a.iconlink:hover {
 }
 
 h1, h2, h3, h4 {
-    color: #b1dfe9;
+    color: #19a78e;
     font-family: 'Sumana', serif;
 }
 h1 {
@@ -75,6 +75,11 @@ h2 {
     font-size: 3em;
 }
 
+p {
+    font-weight: 100;
+    font-size: 1.4em;
+    padding: 20px 0;
+}
 
 header {
     position: fixed;
@@ -232,7 +237,7 @@ footer a:hover{
     background: url('http://img07.deviantart.net/0528/i/2012/198/3/4/yo_videogames__by_ry_spirit-d57k3ay.jpg');
     background-position: 50% 0;
     background-size: cover;
-    height: 500px;
+    height: 660px;
 }
 
 .image_splash h1 {
@@ -274,16 +279,6 @@ footer a:hover{
 }
 
 
-.promo {font-weight: 100;}
-.promo .title {margin-bottom: 20px;  font-size: 1.8em;}
-.promo .content { font-size: 1.8em;}
-.promo .discount {
-    font-size: 2.2em;
-    font-family: "Sumana", serif;}
-.promo .expires {margin-top: 20px; font-size: 1em;}
-.promo ul {}
-
-
 .avatar {
     padding: 0 60px;
 /*    -webkit-filter: grayscale(.8) contrast(0.3) brightness(1.5);
@@ -298,7 +293,7 @@ footer a:hover{
     font-size: 1.6em;
 }
 .avatar_description {
-    color: #b1dfe9;
+    color: #19a78e;
     font-family: 'Sumana', serif;
     font-size: 1.1em;
 }
@@ -399,24 +394,12 @@ footer a:hover{
     }
 }
 
-.carousel-control {
-    width: 5%;
+.row_team {
+    margin: 60px 0;
 }
-.carousel-control.left {
-    background-image: -webkit-linear-gradient(left,rgba(255,255,255,.5) 0,rgba(255,255,255,.0001) 100%);
-    background-image: -o-linear-gradient(left,rgba(255,255,255,1) 0,rgba(255,255,255,.0001) 100%);
-    background-image: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,1)),to(rgba(255,255,255,.0001)));
-    background-image: linear-gradient(to right,rgba(255,255,255,1) 0,rgba(255,255,255,.0001) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-    background-repeat: repeat-x;
-}
-.carousel-control.right {
-    background-image: -webkit-linear-gradient(left,rgba(255,255,255,.0001) 0,rgba(255,255,255,1) 100%);
-    background-image: -o-linear-gradient(left,rgba(255,255,255,.0001) 0,rgba(255,255,255,1) 100%);
-    background-image: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,.0001)),to(rgba(255,255,255,1)));
-    background-image: linear-gradient(to right,rgba(255,255,255,.0001) 0,rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-    background-repeat: repeat-x;
+
+.profile {
+    margin: 60px 0;
 }
 
 
