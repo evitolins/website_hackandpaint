@@ -1,19 +1,17 @@
 {
-  "name": "middle and off",
+  "name": "hack and paint",
   "version": "0.0.0",
   "authors": [
     "Eriks Vitolins <evitolins@gmail.com>"
   ],
-  "description": "website for Richard Chapman",
+  "description": "website for Hack and Paint Studio",
   "main": "index.html",
   "keywords": [
-    "website",
-    "architecture",
-    "photography",
-    "portfolio"
+    "technology",
+    "games"
   ],
   "license": "MIT",
-  "homepage": "middleandoff.com",
+  "homepage": "hackandpaint.com",
   "private": true,
   "ignore": [
     "**/.*",
