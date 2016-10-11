@@ -34,14 +34,17 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    color: #0a5f5d;
+    color: #868686;
 }
 
 a {
     color: #0a5f5d;
+    text-decoration: none;
 }
 a.current,
-a:hover {
+a:hover,
+a:active,
+a:focus {
     color: #0a5f5d;
     text-decoration: none;
 }
