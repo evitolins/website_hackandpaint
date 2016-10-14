@@ -18,7 +18,7 @@
   left: 0;
   right: 100%;
   bottom: 0;
-  background: #0a5f5d;
+  background: #19a78e;
   height: 1px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -35,25 +35,26 @@
 body {
     font-family: 'Lato', sans-serif;
     color: #868686;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 a {
-    color: #0a5f5d;
+    color: #19a78e;
     text-decoration: none;
 }
 a.current,
 a:hover,
 a:active,
 a:focus {
-    color: #0a5f5d;
+    color: #19a78e;
     text-decoration: none;
 }
 
 a.underline {
-    border-bottom: 1px solid #0a5f5d;
+    border-bottom: 1px solid #19a78e;
 }
 a.underline:hover{
-    border-bottom: 1px none #0a5f5d;
+    border-bottom: 1px none #19a78e;
 }
 
 a.iconlink,
@@ -322,7 +323,7 @@ footer a:hover{
     padding: 20px 40px;
     border-radius: 48px;
     background-color: #19a78e;
-    color: #0a5f5d;
+    color: #19a78e;
     font-size: 1.5em;
     font-weight: 100;
 }
