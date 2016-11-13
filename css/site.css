@@ -261,6 +261,11 @@ footer a:hover{
     letter-spacing: 0.06em;
 }
 
+.image_splash_credit {
+    text-align: right;
+    font-size: 0.9em;
+}
+
 .image_service {
     height: 200px;
     background-color: #fee;
