@@ -61,7 +61,7 @@ a.iconlink,
 a.iconlink:hover {
     text-decoration: none;
     border-bottom: none;
-    margin: 0 6px 0 0;
+    /*margin: 0 6px 0 0;*/
 }
 
 h1, h2, h3, h4 {
@@ -190,17 +190,24 @@ footer a:hover{
 /* Elements */
 
 #mainLogo{
-    height: 105px;
+    height: 100px;
     margin-top: 36px;
     margin-bottom: 0px;
+    width: 100px;
     transition: all 0.4s;
     cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/img/hack-and-paint-symbol-only.png);
+    display: inline-block;
 }
 
 #mainLogo.smaller {
     margin-top: 17px;
     height: 50px;
+    width: 160px;
     margin-left: 14px;
+    background-image: url(/img/hack-and-paint-logo-transparent.png);
 }
 
 #mainMenuContainer {
