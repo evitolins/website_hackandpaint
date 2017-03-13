@@ -231,6 +231,23 @@ footer a:hover{
     font-size: 0.9em;
 }
 
+.mainMenuSocial {
+    display: inline;
+    /*margin-top:10px;*/
+    margin-left: 2em;
+}
+
+.mainMenuSocial a {
+    margin: 6px;
+    opacity: 0.4;
+    transition: all 0.2s;
+    font-size: 1em;
+}
+
+.mainMenuSocial a:hover {
+    opacity: 1;
+}
+
 #mainMenuSmContainer {
     display: none;
 }
