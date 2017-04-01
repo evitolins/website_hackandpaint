@@ -2,9 +2,6 @@
 $("#mainLogo").on('click', function () {window.location = "/";});
 $(".menuToggle").on('click', function () {$('.fullScreenMenu').toggleClass("collapsed");});
 $(".link_home").on('click', function () {window.location = "/";});
-$(".link_book").on('click', function () {window.location = "https://go.booker.com/#/location/blowmeaway";});
-$(".link_head").on('click', function () {window.location = "head.html";});
-$(".link_hair").on('click', function () {window.location = "hair.html";});
 
 $(".dropdown-trigger-a").on('mouseover', function () {
     if (!submenu_displaying) display_submenu_ui(true);
