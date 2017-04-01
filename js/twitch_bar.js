@@ -31,11 +31,6 @@ var twitch_load_streams = function () {
           }
           state.stream_active = true;
 
-          // FOR TESTING ONLY
-          data.stream = {};
-          data.stream.game = "Twisted Metal 4";
-          data.stream.viewers = 5;
-
           twitch_widget_status.html("We are Live! - ▶ Now Playing: \"" + data.stream.game + "\"");
           twitch_widget_status.removeClass('dimmed');
           if (data.stream.viewers >= 5) {
@@ -59,7 +54,7 @@ var twitch_load_streams = function () {
           twitch_widget_status.html("currently offline - view archived streams");
           twitch_widget_status_dot.addClass('offline');
           twitch_widget_status_dot.removeClass('online');
-          twitch_widget_container.addClass('collapsed');
+          // twitch_widget_container.addClass('collapsed');
           twitch_widget_container.removeClass('blink_orange');
       }
   });
