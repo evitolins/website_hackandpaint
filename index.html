@@ -19,6 +19,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/twitch_bar.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
@@ -36,6 +37,15 @@
 
         <!-- Add your site or application content here -->
         <header>
+            <div class="twitch-widget-container collapsed">
+                <div id="twitch-widget-status-container">
+                    <i class="fa fa-twitch"></i> <span id="twitch-widget-title"></span> <span id="twitch-widget-status-dot"></span> <a href="#" class="twitch-widget-status dimmed" id="twitch-widget-status" target="_blank"></a> <span id="twitch-widget-status-viewers"></span>
+                </div>
+                <div id="twitch-stats-container">
+                    <span class="stats-section">Views: <span id="twitch-widget-views"></span></span>
+                    <span class="stats-section">Followers: <span id="twitch-widget-followers"></span></span>
+                </div>
+            </div>
             <div class="container">
                 <div id="mainMenuLgContainer" class="row">
                     <div class="col-md-12 centered">
@@ -339,13 +349,18 @@
                 </a>
             </div>
         </div>
+        <!-- https://notificationsounds.com/notification-sounds -->
+        <audio id="audio_notify_start" src="audio/solemn.mp3"></audio>
+        <audio id="audio_notify_end" src="audio/y.mp3"></audio>
 
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        
+        <script src="bower_components/mousetrap/mousetrap.min.js"></script>
         <script src="js/plugins.js"></script>
+        <script src="js/twitch_bar.js"></script>
         <script src="js/main.js"></script>
         <script src="js/bind_ui.js"></script>
+
      
         <!-- Google Analytics -->
         <script>
