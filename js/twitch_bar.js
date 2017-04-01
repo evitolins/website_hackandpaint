@@ -1,4 +1,7 @@
+// // Reference
+// https://github.com/gerberface/streambadge
 // http://codepen.io/svinkle/pen/qIyAE
+// http://wicky.nillia.ms/headroom.js/
 (function() {
 
   var user_name, api_key, twitch_widget_status;
