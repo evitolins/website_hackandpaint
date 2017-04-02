@@ -56,7 +56,13 @@ function init() {
     });
 
     Mousetrap.bind('up up down down left right left right b a enter', function() {
-        alert('Hack and Paint awards you +30 lives!\n\nUse them wisely ;)');
+        alert('Shhh, you\'ve found a secret place.  How about some fun destroying our website?\n\nTry the arrow keys and spacebar... and HAVE FUN!\n\n(Refresh the page to reset.)\n\n');
+        var KICKASSVERSION='2.0';
+        var s = document.createElement('script');
+        s.type='text/javascript';
+        document.body.appendChild(s);
+        s.src='//hi.kickassapp.com/kickass.js';
+        void(0);
     });
 }   
 window.onload = init();
