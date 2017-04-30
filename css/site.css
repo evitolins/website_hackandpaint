@@ -148,7 +148,9 @@ footer a:hover{
     margin-top: 40px;
 }
 
-
+.footer_social .iconlink {
+    padding: 0 4px;
+}
 
 /* Utilities */
 .centered {
@@ -236,23 +238,6 @@ footer a:hover{
 .mainMenuItems.smaller {
     margin-top: 20px;
     font-size: 0.9em;
-}
-
-.mainMenuSocial {
-    display: inline;
-    /*margin-top:10px;*/
-    margin-left: 2em;
-}
-
-.mainMenuSocial a {
-    margin: 6px;
-    opacity: 0.4;
-    transition: all 0.2s;
-    font-size: 1em;
-}
-
-.mainMenuSocial a:hover {
-    opacity: 1;
 }
 
 #mainMenuSmContainer {
@@ -388,6 +373,37 @@ footer a:hover{
     max-height: 0;
     padding-bottom: 0;
 }
+
+.social-side-widget {
+    box-sizing: border-box;
+    width: 35px;
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    padding: 8px;
+    margin-top: -100px;
+    border-radius: 0 4px 4px 0;
+    background: #a3dcd2;
+    color: #fff;
+    text-align: center;
+    line-height: 2em;
+    transition: all 0.2s;
+    z-index: 1000;
+}
+
+.social-side-widget a {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.social-side-widget:hover {
+    background: #19a78e;
+}
+
+.social-side-widget a:hover {
+    color: #fff;
+}
+
 
 
 /* Hide large menu for narrow windows */
