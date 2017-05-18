@@ -30,6 +30,11 @@ $(".btn_closeProfile").on('click',  function () {
     document.body.style.overflow = 'inherit';
 });
 
+// Hide mobile menu on click
+$('.fullScreenMenu a').on('click', function () {
+    $('.fullScreenMenu').toggleClass("collapsed")
+});
+
 
 var submenu_displaying = false;
 var display_submenu_ui = function (show) {
