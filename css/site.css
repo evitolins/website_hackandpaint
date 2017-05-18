@@ -394,7 +394,7 @@ footer a:hover{
 }
 
 .btn_closeProfile {
-    position: absolute;
+    position: fixed;
     top: 40px;
     right: 50px;
     font-size: 2em;
@@ -518,6 +518,13 @@ footer a:hover{
 @media (min-width: 992px) {
     .fullScreenMenu{
         display: none !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .fullScreenProfile{
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
     }
 }
 
