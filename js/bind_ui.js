@@ -44,3 +44,7 @@ var display_submenu_ui = function (show) {
 
 
 $(".btn-contact").on('click', function () {window.location = "contact.html";});
+
+
+// On load
+$('.social-side-widget').removeClass('collapsed');
