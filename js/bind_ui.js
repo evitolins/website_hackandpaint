@@ -32,7 +32,7 @@ $(".btn_closeProfile").on('click',  function () {
 
 // Hide mobile menu on click
 $('.fullScreenMenu a').on('click', function () {
-    $('.fullScreenMenu').toggleClass("collapsed")
+    $('.fullScreenMenu').toggleClass("collapsed");
 });
 
 
@@ -46,5 +46,5 @@ var display_submenu_ui = function (show) {
 $(".btn-contact").on('click', function () {window.location = "contact.html";});
 
 
-// On load
+// On load, animate tab entering
 $('.social-side-widget').removeClass('collapsed');

@@ -401,6 +401,8 @@ footer a:hover{
     font-size: 2em;
     color: #bbbbbb;
     cursor: pointer;
+    line-height: 0em;
+    text-align: center;
 }
 
 .btn_closeProfile:hover {

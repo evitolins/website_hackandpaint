@@ -64,5 +64,10 @@ function init() {
         s.src='//hi.kickassapp.com/kickass.js';
         void(0);
     });
+
+    Mousetrap.bind('esc', function () {
+        $(".fullScreenProfile").toggleClass('invisible', true);
+        document.body.style.overflow = 'inherit';
+    });
 }   
 window.onload = init();
