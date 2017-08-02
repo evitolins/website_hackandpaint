@@ -254,7 +254,7 @@ footer a:hover{
 
 .image_splash {
     position: relative;
-    background: url('http://img07.deviantart.net/0528/i/2012/198/3/4/yo_videogames__by_ry_spirit-d57k3ay.jpg');
+    background: url('/img/yo_videogames__by_ry_spirit-d57k3ay.jpg');
     background-position: 50% 0;
     background-size: cover;
     height: 660px;
