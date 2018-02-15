@@ -1,9 +1,10 @@
 function init() {
-
+    var headerShrinkState = false; 
     var scrollListener = function (e) {
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
             shrinkOn = 80;
-        if (distanceY > shrinkOn) {
+        if (distanceY > shrinkOn && !headerShrinkState) {
+            headerShrinkState = true;
             $("header").addClass("smaller");
             $("#mainLogo").addClass("smaller");
 
@@ -16,7 +17,8 @@ function init() {
             $(".mainMenuItems").addClass("smaller");
 
             $(".interior-dropdown").addClass("smaller");
-        } else {
+        } else if (distanceY < shrinkOn && headerShrinkState) {
+            headerShrinkState = false;
             $("header").removeClass("smaller");
             $("#mainLogo").removeClass("smaller");
 
