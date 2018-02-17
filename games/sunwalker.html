@@ -25,10 +25,13 @@
         <link rel="stylesheet" href="../bower_components/fontawesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/site.css">
         <link rel="stylesheet" href="../css/games.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
         <link href='//fonts.googleapis.com/css?family=Roboto+Slab|Raleway:|Molengo|Actor|Ek+Mukta:200,400|Hind:400,300' rel='stylesheet' type='text/css'>
         <script src="../bower_components/modernizr/modernizr.js"></script>
 
-        <link href="//fonts.googleapis.com/css?family=Lato:300,400,700|Sumana" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Lato:300,400,700|Sumana|Amatic+SC|Nunito|Quicksand|Yanone+Kaffeesatz" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -64,26 +67,25 @@
         <div id="splash_fade" ></div>
       <div id="mainContainerOffset">
         <div id="mainContainer" class="container">
-
-            <div class="row">
+            <div class="row wow fadeInLeft" data-wow-delay="0.3s" data-wow-offset="200">
               <div class='col-md-12'>
-                  <h2 class="text-longshadow">What is Sunwalker?<a name="story"></a></h2>
+                  <h2 class="">What is Sunwalker?<a name="story"></a></h2>
               </div>
-            </div>
-            <div class="row">
               <div class='col-md-6 content'>
                 <img src="/img/sunwalker/anne_exterior_screenshot.jpg" width=100% style="padding: 20px 0;" />
               </div>
               <div class='col-md-6 content img_blurb'>
-                <p><b>Sunwalker</b> is a VR game comfortable for everyone to play, not causing any motion sickness, yet allowing the player to enjoy the immersive VR world.</p>
+                <p>You play as Anne -  a lone survivor. By guiding her in her adventure, you find clues about what happened to her and the world around her.</p>
               </div>
             </div>
-            <div class="row">
+            <div class="row wow fadeInRight" data-wow-delay="0.3s" data-wow-offset="200">
               <div class='col-md-6 content img_blurb'>
-                <p>You play as Anne -  a lone survivor. By guiding her in her adventure, you find clues about what happened to her and the world around her. 
+                <p>
 You guide her by staying in the shadows, where she is safe...
 ...you manipulate the environment around her to protect her from the sun...
 ...and find new friends along the way.</p>
+
+                <p><b>Sunwalker</b> is a VR game comfortable for everyone to play, not causing any motion sickness, yet allowing the player to enjoy the immersive VR world.</p>
               </div>
               <div class='col-md-6 content'>
                 <img src="/img/sunwalker/game_exterior_concept.jpg" width=100% style="padding: 20px 0;" />
@@ -241,8 +243,13 @@ You guide her by staying in the shadows, where she is safe...
         <script src="../js/main.js"></script>
         <script src="../js/bind_ui.js"></script>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
         <script>
 (function(){
+
+          new WOW().init();
+
           // var throttle = function (fn, wait) {
           //   var time = Date.now();
           //   return function(e) {
