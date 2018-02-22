@@ -56,6 +56,11 @@ $('.toggleTrailer').on('click', function () {
     $(".mainMenuItems").toggleClass("smaller", $TRAILER_STATE);
 
     $("body").toggleClass("fixed", $TRAILER_STATE);
+
+    // Autoplay when launched
+    if ($TRAILER_STATE){
+        $("#trailer_iframe")[0].src += "&autoplay=1";
+    }
 });
 
 
