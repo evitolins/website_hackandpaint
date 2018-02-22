@@ -46,11 +46,9 @@
                       <div id="mainLogo" class="link_home"></div>
                     </div>
                     <div class="col-md-12 centered mainMenuItems">
-                        <a class="hvr-underline-from-left" href="#story">our story</a>
-                        <a class="hvr-underline-from-left" href="#values">values</a>
-                        <a class="hvr-underline-from-left" href="#work">work</a>
-                        <a class="hvr-underline-from-left" href="#team">team</a>
-                        <a class="hvr-underline-from-left" href="#contact">contact</a>
+                        <a class="hvr-underline-from-left toggleTrailer">watch trailer</a>
+                        <a class="hvr-underline-from-left">about</a>
+                        <a class="hvr-underline-from-left">news</a>
                     </div>
                 </div>
                 <div id="mainMenuSmContainer" class="row">
@@ -103,11 +101,9 @@ You guide her by staying in the shadows, where she is safe...
                 </div>
                 <div class='col-md-4 footer_column'>
                     <h4>menu</h4>
-                    <a href='#story'>our story</a><br/>
-                    <a href='#values'>values</a><br/>
-                    <a href='#work'>work</a><br/>
-                    <a href='#team'>team</a><br/>
-                    <a href='#contact'>contact</a><br/>
+                    <a class="toggleTrailer" href="#">watch trailer</a><br/>
+                    <a href="#">about</a><br/>
+                    <a href="#">news</a><br/>
                 </div>
                 <div class='col-md-4 footer_column'>
                     <h4>follow us</h4>
@@ -167,22 +163,25 @@ You guide her by staying in the shadows, where she is safe...
 
     </div><!--End mainContainerOffset-->
       
+        <div class="fullScreenTrailer collapsed">
+          <div class="container">
+            <div id="mainMenuLgContainer" class="row">
+              <div class="col-md-12 centered">
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/jlJtt_yA7gY?rel=0&autoplay=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="fullScreenMenu collapsed">
             <div class="allcaps mainMenuItems">
-                <a href="#story" class="current">our story</a>
+                <a class="toggleTrailer" href="#">watch trailer</a>
             </div>
             <div class="allcaps mainMenuItems">
-                <a href="#values" class="">values</a>
+                <a class="" href="#">about</a>
             </div>
             <div class="allcaps mainMenuItems">
-                <a href="#work" class="">work</a>
-            </div>
-            <div class="allcaps mainMenuItems">
-                <a href="#team" class="">team</a>
-            </div>
-            <div class="allcaps mainMenuItems">
-                <a href="#contact" class="">contact</a>
+                <a class="" href="#">news</a>
             </div>
             <br />
             <div class=" allcaps mainMenuItems">
@@ -236,6 +235,7 @@ You guide her by staying in the shadows, where she is safe...
             </a>
         </div>
 
+        <script src="https://cdn.rawgit.com/corbindavenport/superembed.js/f2353c27/superembed.min.js"></script>
         <script src="../bower_components/jquery/dist/jquery.min.js"></script>
         <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="../bower_components/mousetrap/mousetrap.min.js"></script>
@@ -250,28 +250,8 @@ You guide her by staying in the shadows, where she is safe...
 
           new WOW().init();
 
-          // var throttle = function (fn, wait) {
-          //   var time = Date.now();
-          //   return function(e) {
-          //     if ((time + wait - Date.now()) < 0) {
-          //       fn(e);
-          //       time = Date.now();
-          //     }
-          //   }
-          // };
-
-          // var callback = function (e) {
-          //   var target = document.getElementById('splash_container');
-          //   if (window.scrollY > 40) 
-          //     target.classList.remove("filter_blowout");
-          //   else
-          //     target.classList.add("filter_blowout");
-          // };
-
-          // window.addEventListener('scroll', throttle(callback, 300));
-
           var headerShrinkState = false; 
-          var scrollListener2 = function (e) {
+          var scrollListener = function (e) {
               var target = document.getElementById('splash_container');
               var distanceY = window.pageYOffset || document.documentElement.scrollTop,
                   shrinkOn = 80;
@@ -285,14 +265,13 @@ You guide her by staying in the shadows, where she is safe...
           };
 
           // Bind Scroll event
-          // TODO: should be throttled
-          window.addEventListener('scroll', scrollListener2);
+          window.addEventListener('scroll', scrollListener);
 
           // Applied scroll state at page load (for page refreshes)
-          scrollListener2();
+          scrollListener();
+
 })();
         </script>
-
 
         <!-- MailChimp Newsletter Popup -->
         <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"011f999863719b10c141fdb1d","lid":"003b648a35"}) })</script>

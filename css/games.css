@@ -3,6 +3,10 @@ body {
     /*color: #cccccc;*/
 }
 
+body.fixed {
+    position: fixed;
+}
+
 header {
     background-color: #FFFFFF00;
 }
@@ -21,6 +25,11 @@ a {
     text-decoration: none;
 }
 
+a.current, a:hover, a:active, a:focus {
+    color: #e9bf02;
+    text-decoration: none;
+}
+
 footer {
     background-color: #e9bf02;
 }
@@ -28,6 +37,12 @@ footer {
 footer a {
     color: #5a4a00;
 }
+
+
+.hvr-underline-from-left:before {
+    background: #e9bf02;
+}
+
 
 .size_fullscreen {
     position: absolute;
@@ -79,16 +94,16 @@ footer a {
     cursor: pointer;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/img/sunwalker/sunwalker_logo_whiteBG.svg);
+    background-image: url(/img/sunwalker/sunwalker_logo_whiteBG_Orange.svg);
     display: inline-block;
 }
 
 #mainLogo.smaller {
-    margin-top: 31px;
-    height: 50px;
-    width: 160px;
+    margin-top: 33px;
+    height: 40px;
+    width: 190px;
     margin-left: 14px;
-    background-image: url(/img/sunwalker/sunwalker_logo_whiteBG.svg);
+    background-image: url(/img/sunwalker/sunwalker_logo_whiteBG_Orange.svg);
 }
 
 #mainContainerOffset {
@@ -125,6 +140,42 @@ footer a {
 #mainContainer {
     margin-top: 0;
 }
+
+
+.fullScreenTrailer {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-height: 800px;
+    background: #fff;
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 50px;
+    transition: all 0.4s;
+    z-index: 100;
+}
+
+
+/*.fullScreenTrailer.collapsed {
+    max-height: 0;
+    padding-bottom: 0;
+    display: none;
+}*/
+
+/*iframe {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    left: 50px;
+    min-width: calc(100% - 100px);
+    min-height: calc(100% - 200px);
+    width: calc(100% - 100px);
+    height: calc(100% - 140px);
+}*/
 
 .footer_bg {
     background-color: #e9bf02;

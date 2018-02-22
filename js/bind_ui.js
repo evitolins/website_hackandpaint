@@ -36,6 +36,29 @@ $('.fullScreenMenu a').on('click', function () {
 });
 
 
+$TRAILER_STATE = false;
+// Hide mobile menu on click
+$('.toggleTrailer').on('click', function () {
+    $TRAILER_STATE = !$TRAILER_STATE;
+    $('.fullScreenTrailer').toggleClass("collapsed", !$TRAILER_STATE);
+
+    $('#splash_container').toggleClass("filter_blowout", !$TRAILER_STATE);
+
+    $("header").toggleClass("smaller", $TRAILER_STATE);
+    $("#mainLogo").toggleClass("smaller", $TRAILER_STATE);
+
+    $("#mainLogo").parent().toggleClass("col-md-4", $TRAILER_STATE);
+    $("#mainLogo").parent().toggleClass("col-md-12", !$TRAILER_STATE);
+    $("#mainLogo").parent().toggleClass("centered", !$TRAILER_STATE);
+
+    $(".mainMenuItems").toggleClass("col-md-12", !$TRAILER_STATE);
+    $(".mainMenuItems").toggleClass("col-md-8", $TRAILER_STATE);
+    $(".mainMenuItems").toggleClass("smaller", $TRAILER_STATE);
+
+    $("body").toggleClass("fixed", $TRAILER_STATE);
+});
+
+
 var submenu_displaying = false;
 var display_submenu_ui = function (show) {
     if (show) $('.interior-dropdown').slideDown(100);
