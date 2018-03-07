@@ -30,6 +30,10 @@ $(".btn_closeProfile").on('click',  function () {
     document.body.style.overflow = 'inherit';
 });
 
+$(".btn_closeTrailer").on('click',  function () {
+    trailer_toggle();
+});
+
 // Hide mobile menu on click
 $('.fullScreenMenu a').on('click', function () {
     $('.fullScreenMenu').toggleClass("collapsed");
@@ -37,8 +41,7 @@ $('.fullScreenMenu a').on('click', function () {
 
 
 $TRAILER_STATE = false;
-// Hide mobile menu on click
-$('.toggleTrailer').on('click', function () {
+var trailer_toggle = function () {
     $TRAILER_STATE = !$TRAILER_STATE;
     $('.fullScreenTrailer').toggleClass("collapsed", !$TRAILER_STATE);
 
@@ -60,8 +63,16 @@ $('.toggleTrailer').on('click', function () {
     // Autoplay when launched
     if ($TRAILER_STATE){
         $("#trailer_iframe")[0].src += "&autoplay=1";
+    } else {
+        var trailer_src = $("#trailer_iframe")[0].src;
+        $("#trailer_iframe")[0].src = "";
+        $("#trailer_iframe")[0].src = trailer_src + "&autoplay=0";
     }
-});
+};
+
+
+// Hide mobile menu on click
+$('.toggleTrailer').on('click', trailer_toggle);
 
 
 var submenu_displaying = false;
