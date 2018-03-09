@@ -32,6 +32,12 @@ a.current, a:hover, a:active, a:focus {
 
 footer {
     background-color: #e9bf02;
+    margin-top: 0; 
+    color: #a4bed2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+    padding: 0 0 100px;
 }
 
 footer a {
