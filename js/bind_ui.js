@@ -64,9 +64,7 @@ var trailer_toggle = function () {
     if ($TRAILER_STATE){
         $("#trailer_iframe")[0].src += "&autoplay=1";
     } else {
-        var trailer_src = $("#trailer_iframe")[0].src;
-        $("#trailer_iframe")[0].src = "";
-        $("#trailer_iframe")[0].src = trailer_src + "&autoplay=0";
+        $("#trailer_iframe").stopVideo();
     }
 };
 
