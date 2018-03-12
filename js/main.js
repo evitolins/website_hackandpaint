@@ -2,7 +2,8 @@ function init() {
     var headerShrinkState = false; 
     var scrollListener = function (e) {
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 80;
+            // shrinkOn = 80;
+            shrinkOn = 110;
         if (distanceY > shrinkOn && !headerShrinkState) {
             headerShrinkState = true;
             $("header").addClass("smaller");
@@ -43,13 +44,15 @@ function init() {
 
     // Smooth scroll
     $(function() {
+      var offset = 80;
+      var offset = 130;
       $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
           if (target.length) {
             $('html, body').animate({
-              scrollTop: target.offset().top - 80
+              scrollTop: target.offset().top - offset
             }, 600, "swing");
             return false;
           }

@@ -105,7 +105,9 @@ header {
 }
 
 header.smaller {
-    height: 80px;
+    /*height: 80px;*/
+    height: 110px;
+    margin-top: 0px;
 }
 
 footer {
