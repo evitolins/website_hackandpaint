@@ -110,6 +110,10 @@ header.smaller {
     margin-top: 0px;
 }
 
+header.hide_sunwalker_banner {
+    margin-top: -30px !important;
+}
+
 footer {
     margin-top: 100px;
     background-color: #0a5f5d;

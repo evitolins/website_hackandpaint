@@ -74,5 +74,14 @@ function init() {
         $(".fullScreenProfile").toggleClass('invisible', true);
         document.body.style.overflow = 'inherit';
     });
+
+
+    //  Reveal Sunwalker Banner
+    var reveal_banner = function () {
+        $("header").removeClass('hide_sunwalker_banner');
+    };
+    setTimeout(reveal_banner, 2000)
+    ;
+
 }   
 window.onload = init();
